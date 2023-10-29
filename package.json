@@ -5,13 +5,14 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --no-warnings server.js --ignore public --ignore frontend",
+    "start": "node --watch --no-warnings server.js --ignore public --ignore frontend",
     "dev": "webpack -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.2.0",
     "core-js": "^3.24.1",
