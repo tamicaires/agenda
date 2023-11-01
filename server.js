@@ -44,7 +44,7 @@ app.use(csrf());
 
 //Nossos próprios Middlewares
 app.use(globalMiddleware);
-app.use(checkCsrfError);
+app.use(checkCsrfError);  
 app.use(csrfMiddleware);
 app.use(routes);
 
